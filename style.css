@@ -61,6 +61,11 @@ body {
   cursor: pointer;
 }
 
+textarea {
+  resize: none;
+  height:150px;
+}
+
 /*==============================
 ANIME JS
 ==============================*/
@@ -207,6 +212,10 @@ body::-webkit-scrollbar-thumb {
   transition: transform 200ms ease-in-out;
 }
 
+button {
+  border: 0;
+}
+
 /*==============================
 Button Font Media Query for small screen
 ===============================*/
@@ -279,7 +288,7 @@ Special style to onle intro subtitle on hero page
   background-color: var(--clr-purple);
   color: var(--clr-light);
   font-weight: var(--fw-reg);
-  border-radius: 0.05em;
+  border-radius: 5px 20px 5px;
   font-family: var(--ff-third);
 }
 
@@ -516,7 +525,7 @@ For the subtitle intro
     /* position the intro using relative just for design */
     position: relative;
     width: max-content;
-    text-transform: uppercase;
+    text-transform: uppercase;  
   }
 }
 
@@ -729,6 +738,77 @@ FOOTER
   padding: 2.5em 0;
 }
 
+.footer__title--contact {
+  color: var(--clr-light);
+}
+
+/* =================================================================
+Line after underline in contact form */
+
+.footer__title--contact::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height:1px;
+  margin: 0 auto;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  background-color: var(--clr-light);
+  color: var(--clr-light);
+  opacity: 0.5;
+}
+
+/*----------------------------------------------------------------
+CONTACT FORM
+---------------------------------------------------------------*/
+.form-wrapper {
+  width: 700px;
+  margin: 0 auto;
+  height: 100%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.wrap-items {
+  width: 600px;
+  border: 0;
+  padding: 0.5em;
+  margin: 1em;
+  border-radius: 0.2em;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  letter-spacing:0.15em;
+  font-family: var(--ff-third);
+  font-weight: var(--fw-bold);  
+}
+
+
+/*=============================
+Media Query for Form
+=============================*/
+
+@media (min-width:400px ) and (max-width:700px ) {
+  .form-wrapper {
+    width: 400px;
+  }
+  .wrap-items {
+    width: 300px;
+  }
+}
+
+@media (max-width:400px ) {
+  .form-wrapper {
+    width: 280px;
+  }
+  .wrap-items {
+    width: 200px;
+  }
+  textarea {
+    height: 100px;
+  }
+  
+}
+
 .footer a {
   color: inherit;
   text-decoration: none;
@@ -736,7 +816,7 @@ FOOTER
 }
 
 .footer__link {
-  font-size: var(--fs-h3);
+  font-size: var(--fs-body);
   font-weight: var(--fw-bold);
 }
 
@@ -753,7 +833,7 @@ FOOTER
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: 3em 0 0;
   padding: 0;
   transform: 200ms;
 }
@@ -764,10 +844,18 @@ FOOTER
 
 .social-list__link {
   padding: 0.5em;
+  border: 0;
 }
 
 .social-list__link:hover {
   border-bottom: solid 1px var(--clr-accent);
+}
+
+@media (max-width:400px) {
+  .footer__link {
+    font-weight: bold;
+    font-size: smaller;
+  }
 }
 
 /*===================================================
@@ -786,6 +874,7 @@ Go to top button
 
 .fa-arrow-up {
   display: none;
+  box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
@@ -795,7 +884,7 @@ Go to top button
     position: fixed;
     border-radius: 0.25em;
     padding: 0.6em;
-    background-color: black;
+    background-color: var(--clr-dark-secondary);
     color: var(--clr-light);
     font-weight: var(--fw-bold);
     z-index: 1000;
@@ -821,4 +910,93 @@ Go to top button
 .fa-arrow-up:hover {
   background-color: var(--clr-purple);
   transform: scale(1.05);
+}
+
+
+/*=============================
+MAIL SENT NOTIFICATION mail.html
+=============================*/
+
+.mail-body {
+  background-color: rgb(8, 8, 8);
+  color: var(--clr-light);
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-primary);
+}
+
+.card {
+  max-width: 450px;
+  max-height: 100%;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  background: var(--clr-dark-secondary);
+  border-radius: 0.2em;
+  border: 0;
+  padding: 2em;
+  box-shadow: var(--bs);
+}
+
+.card-text, .card-link {
+  margin: 0 auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  letter-spacing:0.1rem;
+  word-spacing: 0.2rem;
+  font-family: var(--ff-third);
+  transition: transform 250ms ease-in-out;
+}
+
+.card-link:hover {
+  transform:scale(1.1);
+}
+
+.card-link-item {
+  text-decoration: none;
+  background-color: var(--clr-purple);
+  color: var(--clr-light);
+  padding: 0.6em;
+  border-radius: 0.2em;
+  font-size:medium;
+  text-transform: uppercase;
+}
+
+.last-item {
+  color: orange;
+  text-align: start;
+  letter-spacing:0.1rem;
+  word-spacing: 0.2rem;
+  font-family: var(--ff-third);
+  margin: 0;
+  padding: 0.5em;  
+}
+
+@media (min-width: 600px) {
+  .card-img-item {
+    margin: 0 auto;
+    width: 350px;
+    height: 100%;
+    border-radius: 0.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-img-item {
+    margin: 0 auto;
+    width: 220px;
+    height: 100%;
+    border-radius: 0.2em;
+  }
+  .card {
+    max-width: 270px;
+    max-height: 100%;
+    margin: 0 auto;
+    margin-top: 2em; 
+    background: var(--clr-dark);
+    border-radius: 0.2em;
+    border: 0;
+    padding: 2em;
+    box-shadow: var(--bs);
+    transition: transform 250ms ease-in-out;
+  }
 }
