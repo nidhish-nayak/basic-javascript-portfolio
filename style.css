@@ -1,0 +1,824 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*=====================================================
+Set custom properties with root
+=====================================================*/
+
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+  --ff-third: "Raleway", sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #f8f8f8;
+  --clr-dark: #303030;
+  --clr-dark-secondary: rgb(25, 25, 25);
+  --clr-accent: #16e0bd;
+  --clr-purple: rgb(132, 83, 227);
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+/* =====================================================
+General styles
+======================================================*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark-secondary);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+/*==============================
+ANIME JS
+==============================*/
+
+.line-container {
+  height: 100%;
+  width: 600px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0 auto;
+}
+
+#svg-anime path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+
+.box {
+  height: 30px;
+  width: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: white;
+}
+
+.box:hover {
+  background-color: var(--clr-purple);
+  cursor: pointer;
+}
+
+@media (min-width: 560px) and (max-width: 715px) {
+  .line-container {
+    margin: 0 auto;
+    height: 100%;
+    width: 400px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .box {
+    height: 20px;
+    width: 20px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    background: white;
+  }
+}
+
+@media (min-width: 345px) and (max-width: 560px) {
+  .line-container {
+    margin: 0 auto;
+    height: 100%;
+    width: 200px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .box {
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: white;
+  }
+}
+
+@media (max-width: 345px) {
+  .line-container {
+    margin: 0 auto;
+    height: 100%;
+    width: 100px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .box {
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: white;
+  }
+}
+
+/*===============END ANIME============*/
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+/*================================
+Custom Scrollbar
+================================*/
+
+body::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-purple);
+  border-radius: 0.1em;
+}
+
+/* ==============================
+ # Buttons
+===============================*/
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+.btn {
+  margin-left: 2em;
+  margin-right: 2em;
+  align-self: center;
+  justify-self: center;
+  max-width: 14em;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+/*==============================
+Button Font Media Query for small screen
+===============================*/
+@media (min-width: 390px) and (max-width: 615px) {
+  .btn {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 390px) {
+  .btn {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 0.5rem;
+  }
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* ==============================================
+Just padding the download button
+==============================================*/
+.fa-download {
+  margin-right: 1.25em;
+}
+
+/*=====================================================
+Typography
+=====================================================*/
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro {
+  display: block;
+  justify-self: end;
+}
+
+/*=================================================
+Special style to onle intro subtitle on hero page
+=================================================*/
+
+#intro-subtitle {
+  background-color: var(--clr-purple);
+  color: var(--clr-light);
+  font-weight: var(--fw-reg);
+  border-radius: 0.05em;
+  font-family: var(--ff-third);
+}
+
+/*===============================================*/
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--clr-accent);
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+  padding: 0.25em 1em;
+}
+
+.section__subtitle--work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
+}
+
+/*=====================================================
+Header
+=====================================================*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  position: relative;
+}
+
+.logo {
+  width: 138.54px;
+  height: 25.05px;
+}
+
+.nav {
+  position: fixed;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  /* Move the navbar '#'% to the right */
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+}
+
+.nav__link:hover {
+  color: var(--clr-accent);
+}
+
+.nav-toggle {
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+/********************************
+HAMBURGER NAVBAR
+********************************/
+
+.hamburger {
+  background: var(--clr-dark);
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: var(--clr-purple);
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-toggle:focus {
+  outline: 2px solid rgb(132, 83, 227);
+  outline-offset: 3px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before {
+  top: 6px;
+} /* Sets the before item to the bottom of the hamburger by 6px */
+.hamburger::after {
+  bottom: 6px;
+} /* Same vice versa */
+
+/*======================================================
+Intro section
+======================================================*/
+
+.intro {
+  position: relative;
+}
+
+.intro__img {
+  box-shadow: var(--bs);
+}
+
+/*=============================
+MEDIA QUERIES FOR SMALL, MEDIUM AND LARGE SCREENS
+For the subtitle intro
+=============================*/
+
+@media (min-width: 345px) and (max-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    /*min-content -> sets all grids to min size 
+          max-content -> sets all contents or elements inside grid to max size*/
+    grid-template-columns: min-content max-content;
+  }
+  .section__subtitle--intro {
+    grid-column: 2;
+    text-align: start;
+    /* position the intro using relative just for design */
+    position: relative;
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: var(--ff-primary);
+    justify-self: end;
+  }
+}
+
+@media (max-width: 345px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    /*min-content -> sets all grids to min size 
+          max-content -> sets all contents or elements inside grid to max size*/
+    grid-template-columns: min-content max-content;
+  }
+  .section__subtitle--intro {
+    grid-column: 2;
+    text-align: start;
+    /* position the intro using relative just for design */
+    position: relative;
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-family: var(--ff-primary);
+    justify-self: start;
+  }
+}
+
+@media (min-width: 600px) and (max-width:3840px){
+  .intro {
+    height: 100vh;
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    /*min-content -> sets all grids to min size 
+          max-content -> sets all contents or elements inside grid to max size*/
+    grid-template-columns: min-content max-content;
+  }
+
+  .section__subtitle--intro {
+    /* make the text go to column 2. then align it to end */
+    height: min-content;
+    grid-column: 2;
+    text-align: start;
+    /* position the intro using relative just for design */
+    position: relative;
+    width: max-content;
+    text-transform: uppercase;
+  }
+}
+
+/*==============================================================
+4K screen optimized removed 100vh to get better visiual on intro
+==============================================================*/
+
+@media (min-width: 3840px){
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    /*min-content -> sets all grids to min size 
+          max-content -> sets all contents or elements inside grid to max size*/
+    grid-template-columns: min-content max-content;
+  }
+
+  .section__subtitle--intro {
+    /* make the text go to column 2. then align it to end */
+    height: min-content;
+    grid-column: 2;
+    text-align: start;
+    /* position the intro using relative just for design */
+    position: relative;
+    width: max-content;
+    text-transform: uppercase;
+  }
+}
+
+/* ==============================================================
+My Skills Section
+===============================================================*/
+
+.my-skills {
+  background-color: var(--clr-dark-secondary);
+  background-image: url(cover_sheet.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__title--skills {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.section__title--skills::after {
+  content: "";
+  display: block;
+  width: 3em;
+  height: 1.5px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.6;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  list-style: none;
+  padding: 1em;
+}
+.skills-title {
+  padding: 1em;
+  font-family: var(--ff-primary);
+  letter-spacing: 0.025rem;
+}
+
+.skills-title .fab,
+.skills-title .fas {
+  font-size: 2em;
+  transition: transform 200ms ease-in-out;
+}
+
+.skills-title .fab:hover,
+.skills-title .fas:hover {
+  transform: scale(1.2);
+  color: orange;
+}
+
+/*----------------------------------------------------------------
+ABOUT ME SECTION
+----------------------------------------------------------------*/
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-me__img {
+  box-shadow: var(--bs);
+  border-radius: 0.2em;
+  transition: transform 250ms ease-in-out;
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1/-1;
+    grid-row: 2;
+    position: relative;
+    left: -2em;
+    width: calc(100%+4em);
+    padding-left: 2em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* ==============================
+My Work
+================================*/
+
+.my-work {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.portfolio__item {
+  background-color: var(--clr-accent);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: var(--clr-light);
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.portfolio__item:hover,
+.portfolio__item:focus {
+  color: var(--clr-accent);
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+  transform: scale(1.2);
+  opacity: 0.5;
+  color: var(--clr-accent);
+}
+
+.portfolio__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+}
+
+@media (min-width: 240px) and (max-width: 320px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  }
+}
+
+/*============================================================
+FOOTER
+============================================================*/
+
+.footer {
+  background: #111;
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  font-size: var(--fs-h3);
+}
+
+.footer__link {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+  opacity: 0.7;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+  transform: 200ms;
+}
+
+.social-list__item {
+  margin: 0 0.5em;
+}
+
+.social-list__link {
+  padding: 0.5em;
+}
+
+.social-list__link:hover {
+  border-bottom: solid 1px var(--clr-accent);
+}
+
+/*===================================================
+Project individual items
+===================================================*/
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*===================================================
+Go to top button
+===================================================*/
+
+.fa-arrow-up {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .fa-arrow-up {
+    top: 90%;
+    left: 92%;
+    position: fixed;
+    border-radius: 0.25em;
+    padding: 0.6em;
+    background-color: black;
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+    z-index: 1000;
+    transition: transform 250ms ease-in-out;
+  }
+}
+
+@media (max-width: 600px) {
+  .fa-arrow-up {
+    top: 90%;
+    left: 90%;
+    position: fixed;
+    border-radius: 0.2em;
+    padding: 0.4em;
+    background-color: var(--clr-dark-secondary);
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+    z-index: 1000;
+    transition: transform 250ms ease-in-out;
+  }
+}
+
+.fa-arrow-up:hover {
+  background-color: var(--clr-purple);
+  transform: scale(1.05);
+}
