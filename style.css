@@ -321,7 +321,7 @@ header {
   width: 138.54px;
   height: 25.05px;
 }
-
+/* Media logo for max width screen */
 @media (min-width: 600px) {
   .logo {
     width: 143.54px;
