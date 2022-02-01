@@ -8,40 +8,63 @@
     <title>Portfolio</title>
 
     <!-- Google Fonts -->
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <!-- Title Bar Icon -->
+
     <link rel="icon" href="https://img.icons8.com/color/96/000000/bot.png" type="image/x-icon">
 
     <!-- Normalize CSS to get better cross browser compatibility -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!-- Font Awesome 5.0.7 -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Main CSS File -->
+
+    <link rel="stylesheet" href="style.css">
+
     <!-- ANIME JS FILE!-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
         integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Email JS File used from the documentation -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">  (function (){emailjs.init("user_72V5ZrKiDqB9prAC597MF");})();  </script>
+
+    <!-- Sweet Alerts File -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
 <body>
     <header id="top">
 
+        <!-- MAIN LOGO -->
+
         <div class="logo" onclick="window.location.reload();">
             <img src="main_logo.png" alt="">
         </div>
+
+        <!-- Navigation Button -->
+
         <button class="nav-toggle" aria-expanded="toggle navigation">
             <span class="hamburger"></span>
         </button>
+
+        <!-- Navigation Bar Items -->
+
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
@@ -72,6 +95,7 @@
 
 
     <!-- My Skills -->
+
     <section class="my-skills" id="skills">
         <h2 class="section__title section__title--skills">My Skills</h2>
         <div class="wrapper">
@@ -116,15 +140,18 @@
                 </li>
             </ul>
         </div>
-        <!--Skills END-->
+
+        <!-- Buttons for resume and project -->
 
         <div class="button-container">
             <a href="#work" class="btn">My Projects</a>
             <a href="Nidhish Resume.pdf" class="btn" download><i class="fas fa-download"></i>Resume</a>
         </div>
+
     </section>
 
-    <!--About Me-->
+    <!-- About Me -->
+
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">About Me</h2>
         <p class="section__subtitle section__subtitle--about">Designer & developer</p>
@@ -137,12 +164,12 @@
                 framework
                 and basics of programming.</p>
         </div>
-
         <img src="about_me.JPG" alt="" class="about-me__img">
     </section>
 
 
     <!-- My Work -->
+
     <section class="my-work" id="work">
         <h2 class="section__title section__title--work">My work</h2>
         <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
@@ -199,24 +226,28 @@
                 <div class="portfolio__text">Bug Tracker</div>
             </a>
         </div>
+
     </section>
 
 
     <!-- FOOTER -->
+
     <footer id="contact" class="footer">
         <h2 class="footer__title footer__title--contact">Contact</h2>
 
-        <!-- CONTACT FORM -->
+        <!-- CONTACT FORM (I have used IDs for EmailJS and Classes for CSS Styling) -->
+
         <div class="form-wrapper">
-            <form class="form-wrapper wrap" action="https://formsubmit.co/nidhibelthangady@email.com" method="POST">
-                <input type="hidden" name="_subject" value="New submission!">
-                <input class="wrap-items"  type="email" name="email" placeholder="Your Email Address" required>
-                <textarea class="wrap-items" type="text" name="name" placeholder="Write your message here" required></textarea>
-                <input type="hidden" name="_next" value="https://nidhish-d-nayak.github.io/mail.html">
-                <button class="btn" type="submit">Send</button>
+            <form id="contact-form" class="form-wrapper wrap" method="POST">
+                <input id="name" class="wrap-items" type="text" placeholder="Your Name" required>
+                <input id="email" class="wrap-items" type="email" placeholder="Your Email Address" required>
+                <textarea id="message" class="wrap-items" placeholder="Write your message here" required></textarea>
+                <button id="submit" class="btn" type="submit" name="submit">Send</button>
             </form>
         </div>
-        <a class="footer__link" href="mailto:nidhibelthangady@gmail.com">nidhibelthangady@gmail.com</a>
+
+        <!-- Social Address -->
+
         <ul class="social-list">
             <li class="social-list__item"><a target="_blank"
                     href="https://www.linkedin.com/in/nidhishdnayak?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpDImbgIxS8muPZn0lL463w%3D%3D"
@@ -228,12 +259,15 @@
             <li class="social-list__item"><a target="_blank" href="https://codepen.io/nidhish-d-nayak"
                     class="social-list__link"><i class="fab fa-codepen"></i><a></li>
         </ul>
+
     </footer>
 
     <!-- GO TO TOP ARROW -->
+
     <a href="#top"><i id="up-arrow" class="fas fa-arrow-up"></i></a>
 
     <!-- Main Javascript File -->
+
     <script src="script.js"></script>
 
 </body>
