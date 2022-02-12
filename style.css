@@ -109,7 +109,7 @@ Intro section with ANIME JS
 ======================================================*/
 
 .intro {
-  height: 100%;
+  height: 90vh;
 }
 
 .line-container {
@@ -493,6 +493,7 @@ My Skills Section
 ===============================================================*/
 
 .my-skills {
+  height: 80vh;
   background-color: var(--clr-dark-very);
   background-image: url(cover_sheet.webp);
   background-size: cover;
@@ -559,6 +560,7 @@ ABOUT ME SECTION
 ----------------------------------------------------------------*/
 
 .about-me {
+  height: 70vh;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -606,6 +608,7 @@ My Work
 ================================*/
 
 .my-work {
+  height: 100vh;
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
@@ -663,6 +666,7 @@ FOOTER
 ============================================================*/
 
 .footer {
+  height: 100vh;
   background: #111;
   color: var(--clr-accent);
   text-align: center;
