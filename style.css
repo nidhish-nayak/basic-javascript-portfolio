@@ -72,8 +72,8 @@ Set custom properties with root
   :root {
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
-    --fs-h3: 1rem;
-    --fs-body: 1rem;
+    --fs-h3: 0.85rem;
+    --fs-body: 0.8rem;
   }
 }
 
@@ -1205,29 +1205,27 @@ Go to top button
   .my-projects-subtitle {
     padding: 0.3em 1em 0.3em 1.5em;
     margin: 2em 0 2em -1.5em;
-    max-width: 70%;
+    max-width: 100%;
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
     box-shadow: var(--bs);
     background-color: var(--clr-accent);
-    letter-spacing: 0.1rem;
-    word-spacing: 0.1rem;
   }
 
   .my-projects-body {
     margin: 2em 0;
-    max-width: 90%;
-    font-size: calc(var(--fs-h3) - 1px);
-    word-spacing: 0.2rem;
+    max-width: 100%;
+    font-size: calc(var(--fs-h3));
+    word-spacing: 0.05rem;
   }
 }
 
-@media (min-width: 425px) and (max-width: 805px) {
+@media (min-width: 425px) and (max-width: 855px) {
   .my-projects-subtitle {
     padding: 0.3em 1em 0.3em 1.5em;
     margin: 2em 0 2em -1.5em;
-    max-width: 80%;
+    max-width: 100%;
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
@@ -1239,8 +1237,25 @@ Go to top button
 
   .my-projects-body {
     margin: 2em 0;
-    max-width: 90%;
+    max-width: 100%;
     font-size: calc(var(--fs-h3) - 2px);
-    word-spacing: 0.2rem;
+    word-spacing: 0.1rem;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 425px) {
+  .section__subtitle--about {
+    margin-left: -1em;
+    font-size: 16px;
+  }
+  .about-me__body {
+    font-size: 14px;
+  }  
+}
+
+@media (min-width: 250px) and (max-width: 660px) {
+  .button-container .fa-chalkboard-teacher,
+  .button-container .fa-github {
+    display: none;
   }
 }
