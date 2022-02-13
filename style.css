@@ -70,10 +70,10 @@ Set custom properties with root
 
 @media (min-width: 250px) and (max-width: 425px) {
   :root {
-    --fs-h1: 2.15rem;
-    --fs-h2: 1.75rem;
-    --fs-h3: 1.15rem;
-    --fs-body: 1rem;
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 0.85rem;
+    --fs-body: 0.8rem;
   }
 }
 
@@ -210,13 +210,13 @@ Intro section with ANIME JS
   .line-container {
     margin: 0 auto;
     height: 100%;
-    width: 200px;
+    width: 100px;
     padding: 2em 0 2em 0;
   }
 
   .line-container-text {
     display: flex;
-    width: 70%;
+    width: 100px;
     justify-content: flex-end;
     text-transform: uppercase;
     margin: 0 auto;
@@ -869,7 +869,6 @@ My Work
   letter-spacing: 0.05rem;
   word-spacing: 0.1rem;
   padding: 0.1em 0 0.2em 0;
-  font-size: var(--fs-h3);
 }
 
 @media (min-width: 240px) and (max-width: 320px) {
@@ -1250,15 +1249,8 @@ Go to top button
     font-size: 16px;
   }
   .about-me__body {
-    font-size: 18px;
-  } 
-  .my-projects-img-item {
-    margin: 0 auto;
-    width: 80%;
-    border: 0.1em solid var(--clr-dark-secondary);
-    transition: transform 250ms ease-in-out;
-    box-shadow: var(--bs);
-  }
+    font-size: 14px;
+  }  
 }
 
 @media (min-width: 250px) and (max-width: 660px) {
