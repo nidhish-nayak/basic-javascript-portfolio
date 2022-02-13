@@ -27,4 +27,4 @@ Nidhish D Nayak - [ My LinkedIn: https://www.linkedin.com/in/nidhishdnayak ] [ G
 
 Project Link: [https://nidhish-d-nayak.github.io](https://nidhish-d-nayak.github.io)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top"><i id="up-arrow" class="fas fa-arrow-up"></i></a>)</p>
