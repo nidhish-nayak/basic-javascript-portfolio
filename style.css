@@ -72,8 +72,8 @@ Set custom properties with root
   :root {
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
-    --fs-h3: 0.85rem;
-    --fs-body: 0.8rem;
+    --fs-h3: 1rem;
+    --fs-body: 1rem;
   }
 }
 
@@ -1199,4 +1199,48 @@ Go to top button
   margin: 0.2em auto 0.5em;
   background: var(--clr-dark-secondary);
   opacity: 0.5;
+}
+
+@media (min-width: 250px) and (max-width: 425px) {
+  .my-projects-subtitle {
+    padding: 0.3em 1em 0.3em 1.5em;
+    margin: 2em 0 2em -1.5em;
+    max-width: 70%;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    box-shadow: var(--bs);
+    background-color: var(--clr-accent);
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+  }
+
+  .my-projects-body {
+    margin: 2em 0;
+    max-width: 90%;
+    font-size: calc(var(--fs-h3) - 1px);
+    word-spacing: 0.2rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 805px) {
+  .my-projects-subtitle {
+    padding: 0.3em 1em 0.3em 1.5em;
+    margin: 2em 0 2em -1.5em;
+    max-width: 80%;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    box-shadow: var(--bs);
+    background-color: var(--clr-accent);
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+  }
+
+  .my-projects-body {
+    margin: 2em 0;
+    max-width: 90%;
+    font-size: calc(var(--fs-h3) - 2px);
+    word-spacing: 0.2rem;
+  }
 }
