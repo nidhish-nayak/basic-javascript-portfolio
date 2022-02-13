@@ -3,15 +3,6 @@ const navLinks = document.querySelectorAll('.nav__link'); /*Variable for closing
 const boxAlert = document.querySelectorAll(".box"); /*Variable for circle animation at intro*/
 const toTop = document.getElementById("up-arrow"); /*Variable for To the top button display on scroll */
 
-/*=========================
-PWA Model
-=========================*/
-
-if ("serviceWorker" in navigator) {
-  // register service worker
-  navigator.serviceWorker.register("service-worker.js");
-}
-
 /*==========================
 Pre Loader
 ==========================*/
