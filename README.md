@@ -7,8 +7,8 @@ Hi there 👋.
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://nidhish-d-nayak.github.io">
-    <img src="icon.png" alt="Logo" width="80" height="80">
+  <a href="https://nidhish-d-nayak.github.io/">
+    <img src="/icon.png" alt="Logo" width="80" height="80">
   </a>
 
 
@@ -20,7 +20,7 @@ Here are my social links if you need to contact me 🤩
 <!-- CONTACT -->
 ## Contact
 
-Nidhish D Nayak - [@your_linkedin](https://www.linkedin.com/in/nidhishdnayak/) - nidhibelthangady@gmail.com
+Nidhish D Nayak - My LinkedIn: (https://www.linkedin.com/in/nidhishdnayak/), Gmail: nidhibelthangady@gmail.com
 
 Project Link: [https://nidhish-d-nayak.github.io](https://nidhish-d-nayak.github.io)
 
