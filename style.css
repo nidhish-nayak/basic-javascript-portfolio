@@ -26,18 +26,45 @@ Set custom properties with root
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
-  --fs-body: 1rem;
+  --fs-body: 1.15rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px) and (max-width: 1601px) {
   :root {
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
+    --fs-h3: 1.75rem;
+    --fs-body: 1rem;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1921px) {
+  :root {
+    --fs-h1: 5.25rem;
+    --fs-h2: 4.5rem;
+    --fs-h3: 2.25rem;
+    --fs-body: 1.9rem;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2049px) {
+  :root {
+    --fs-h1: 5.75rem;
+    --fs-h2: 5rem;
+    --fs-h3: 2.75rem;
+    --fs-body: 2rem;
+  }
+}
+
+@media (min-width: 2049px) {
+  :root {
+    --fs-h1: 8.5rem;
+    --fs-h2: 8rem;
+    --fs-h3: 5.5rem;
+    --fs-body: 3.95rem;
   }
 }
 
@@ -45,11 +72,10 @@ Set custom properties with root
   :root {
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
-    --fs-h3: 0.5rem;
+    --fs-h3: 1rem;
     --fs-body: 0.75rem;
   }
 }
-
 
 /* =====================================================
 General styles
@@ -77,6 +103,20 @@ textarea {
   height: 150px;
 }
 
+@media (min-width: 1920px) and (max-width: 2049px) {
+  textarea {
+    resize: none;
+    height: 250px;
+  }
+}
+
+@media (min-width: 2049px) {
+  textarea {
+    resize: none;
+    height: 350px;
+  }
+}
+
 /*=====================================================
 Pre Loader
 ======================================================*/
@@ -95,7 +135,7 @@ Pre Loader
 }
 
 .preload-text {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   color: var(--clr-dark-secondary);
 }
 
@@ -114,7 +154,7 @@ Intro section with ANIME JS
 
 .line-container {
   display: flex;
-  width: 600px;
+  max-width: 50%;
   padding: 2em 0 2em 0;
   margin: 0 auto;
   align-items: center;
@@ -125,7 +165,7 @@ Intro section with ANIME JS
   display: flex;
   width: 600px;
   height: 100%;
-  justify-content:flex-end;
+  justify-content: flex-end;
   text-transform: uppercase;
   margin: 0 auto;
   align-items: center;
@@ -142,12 +182,11 @@ Intro section with ANIME JS
   .line-container-text {
     display: flex;
     width: 500px;
-    justify-content:flex-end;
+    justify-content: flex-end;
     text-transform: uppercase;
     margin: 0 auto;
     align-items: center;
   }
-
 }
 
 @media (min-width: 345px) and (max-width: 560px) {
@@ -160,12 +199,11 @@ Intro section with ANIME JS
   .line-container-text {
     display: flex;
     width: 300px;
-    justify-content:flex-end;
+    justify-content: flex-end;
     text-transform: uppercase;
     margin: 0 auto;
     align-items: center;
   }
-  
 }
 
 @media (max-width: 345px) {
@@ -179,12 +217,71 @@ Intro section with ANIME JS
   .line-container-text {
     display: flex;
     width: 100px;
-    justify-content:flex-end;
+    justify-content: flex-end;
     text-transform: uppercase;
     margin: 0 auto;
     align-items: center;
   }
-  
+}
+
+@media (min-width: 1600px) and (max-width: 1921px) {
+  .intro {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .line-container-text {
+    display: flex;
+    width: 830px;
+    height: 100%;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2048px) {
+  .line-container-text {
+    display: flex;
+    width: 1000px;
+    height: 100%;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+@media (min-width: 2048px) and (max-width: 3839px) {
+  .intro {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+  .line-container-text {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+@media (min-width: 3839px) {
+  .intro {
+    padding-bottom: 160px;
+    padding-top: 160px;
+  }
+  .line-container-text {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    margin: 0 auto;
+    align-items: center;
+  }
 }
 
 /*===============END INTRO============*/
@@ -245,7 +342,7 @@ body::-webkit-scrollbar-thumb {
   color: var(--clr-dark-secondary);
   text-decoration: none;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: calc(var(--fs-body) - 2px);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
@@ -259,11 +356,17 @@ button {
 /*==============================
 Button Font Media Query for small screen
 ===============================*/
-@media (min-width: 390px) and (max-width: 615px) {
+/* @media (min-width: 390px) and (max-width: 615px) {
   .btn {
     margin-left: 0.5em;
     margin-right: 0.5em;
     font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .btn {
+    font-size: calc(var(--fs-body) - 3.5px);
   }
 }
 
@@ -273,7 +376,7 @@ Button Font Media Query for small screen
     margin-right: 0.5em;
     font-size: 0.5rem;
   }
-}
+} */
 
 .btn:hover {
   transform: scale(1.1);
@@ -285,7 +388,6 @@ Just padding the download button
 .fa-download {
   margin-right: 1.25em;
 }
-
 
 /*=====================================================
 Typography
@@ -312,8 +414,8 @@ h3 {
 }
 
 .section__subtitle {
-    margin: 0;
-    font-size: var(--fs-h3);
+  margin: 0;
+  font-size: var(--fs-h3);
 }
 
 .section__subtitle--intro {
@@ -375,6 +477,13 @@ header {
 .logo {
   width: 138.54px;
   height: 25.05px;
+}
+
+@media (min-width: 1920px) {
+  .logo {
+    width: 10%;
+    height: 2%;
+  }
 }
 
 .nav {
@@ -450,10 +559,6 @@ HAMBURGER NAVBAR
 ********************************/
 
 .hamburger {
-  background: var(--clr-dark);
-  width: 2em;
-  height: 3px;
-  border-radius: 1em;
   display: block;
   position: relative;
 }
@@ -466,6 +571,18 @@ HAMBURGER NAVBAR
   height: 3px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
+}
+
+@media (min-width: 1920px) and (max-width: 2049px) {
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    background: var(--clr-purple);
+    width: 1.5em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+  }
 }
 
 .nav-toggle:focus {
@@ -487,6 +604,24 @@ HAMBURGER NAVBAR
 .hamburger::after {
   bottom: 6px;
 } /* Same vice versa */
+
+@media (min-width: 2049px) {
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    background: var(--clr-purple);
+    width: 2em;
+    height: 6px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+  }
+  .hamburger::before {
+    top: 15px;
+  } /* Sets the before item to the bottom of the hamburger by 6px */
+  .hamburger::after {
+    bottom: 15px;
+  } /* Same vice versa */
+}
 
 /* ==============================================================
 My Skills Section
@@ -521,27 +656,30 @@ My Skills Section
   margin: 0 auto;
   max-width: 1000px;
 }
+
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   list-style: none;
   padding: 1em;
 }
+
 .skills-title {
   padding: 1em;
   font-family: var(--ff-primary);
   letter-spacing: 0.025rem;
+  font-size: calc(var(--fs-body) + 2px);
 }
 
 .skills-title .fab,
 .skills-title .fas {
-  font-size: 2em;
+  font-size: calc(var(--fs-h3) + 5px);
   transition: transform 200ms ease-in-out;
 }
 
 .skills-title .fab:hover,
 .skills-title .fas:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
   color: orange;
 }
 
@@ -549,6 +687,18 @@ My Skills Section
   .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    list-style: none;
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper {
+    max-width: 80%;
+  }
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     list-style: none;
     padding: 1em;
   }
@@ -569,8 +719,13 @@ ABOUT ME SECTION
   transition: transform 250ms ease-in-out;
 }
 
-@media (min-width: 600px) {
+.about-me__body {
+  font-size: calc(var(--fs-h3) - 4px);
+}
+
+@media (min-width: 600px) and (max-width: 1367px) {
   .about-me {
+    max-width: 80%;
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-areas:
@@ -580,6 +735,71 @@ ABOUT ME SECTION
     grid-column-gap: 2em;
   }
 
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1/-1;
+    grid-row: 2;
+    position: relative;
+    left: -2em;
+    width: calc(100%+4em);
+    padding-left: 2em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 2049px) {
+  .about-me {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1/-1;
+    grid-row: 2;
+    position: relative;
+    left: -2em;
+    width: calc(100%+4em);
+    padding-left: 2em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 2049px) {
+  .about-me {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
   .section__title--about {
     grid-area: title;
   }
@@ -658,6 +878,33 @@ My Work
   }
 }
 
+@media (min-width: 2049px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .portfolio__item {
+    background-color: black;
+    width: 1000px;
+    height: 1130px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--clr-light);
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+      opacity 250ms linear;
+  }
+
+  .portfolio__img {
+    width: 1000px;
+    height: 1000px;
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+      opacity 250ms linear;
+  }
+}
+
 /*============================================================
 FOOTER
 ============================================================*/
@@ -693,7 +940,7 @@ Line after underline in contact form */
 CONTACT FORM
 ---------------------------------------------------------------*/
 .form-wrapper {
-  width: 700px;
+  width: 70%;
   margin: 0 auto;
   height: 100%;
   margin-top: 1em;
@@ -701,7 +948,7 @@ CONTACT FORM
 }
 
 .wrap-items {
-  width: 600px;
+  width: 100%;
   border: 0;
   padding: 0.5em;
   margin: 1em;
@@ -741,7 +988,7 @@ Media Query for Form
 .footer a {
   color: inherit;
   text-decoration: none;
-  font-size: var(--fs-h3);
+  font-size: calc(var(--fs-body) + 5px);
 }
 
 .social-list {
@@ -805,13 +1052,15 @@ Go to top button
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     width: max-content;
     padding: 0;
     border: 1px solid black;
   }
   .hero-item {
     margin: 0;
+    font-size: calc(var(--fs-body) + 2px);
+    font-weight: var(--fw-bold);
   }
   .hero-link .fab {
     color: black;
@@ -850,7 +1099,6 @@ Go to top button
   transform: scale(1.05);
 }
 
-
 /*================================================================================
                     MY PROJECTS PAGE STYLING
 ================================================================================*/
@@ -863,13 +1111,13 @@ Go to top button
 }
 
 .page-title::after {
-    content: "";
-    display: block;
-    width: 3em;
-    height: 1.5px;
-    margin: 0.1em auto 0.5em;
-    background: var(--clr-dark-secondary);
-    opacity: 0.5;
+  content: "";
+  display: block;
+  width: 3em;
+  height: 1.5px;
+  margin: 0.1em auto 0.5em;
+  background: var(--clr-dark-secondary);
+  opacity: 0.5;
 }
 
 .my-projects {
@@ -877,11 +1125,11 @@ Go to top button
 }
 
 .my-projects-subtitle {
-  padding: 1em 1em 1em 2em;
-  margin: 2em 0 2em -2em;
-  max-width: 600px; 
-  font-family: var(--ff-third);
-  font-size: var(--fs-secondary);
+  padding: 0.3em 1em 0.3em 1.5em;
+  margin: 2em 0 2em -1.5em;
+  max-width: 50%;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
   font-weight: var(--fw-bold);
   box-shadow: var(--bs);
   background-color: var(--clr-accent);
@@ -891,21 +1139,24 @@ Go to top button
 
 .my-projects-body {
   margin: 2em 0;
-  max-width: 1000px;
-  font-size: larger;
+  max-width: 80%;
+  font-size: calc(var(--fs-h3) - 5px);
   word-spacing: 0.2rem;
 }
 
 .my-projects-img {
-  max-height: 100%;
-  max-width: 600px;
-  margin: 4em auto 4em;
+  margin: 4em 0 4em 0;
+}
+
+.my-projects-img-item {
+  margin: 0 auto;
+  width: 60%;
   border: 0.1em solid var(--clr-dark-secondary);
   transition: transform 250ms ease-in-out;
   box-shadow: var(--bs);
 }
 
-.my-projects-img:hover {
+.my-projects-img-item:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -931,6 +1182,16 @@ Go to top button
 }
 
 .my-projects-site-title::after {
+  content: "";
+  display: block;
+  width: 3em;
+  height: 2px;
+  margin: 0.2em auto 0.5em;
+  background: var(--clr-dark-secondary);
+  opacity: 0.5;
+}
+
+.my-projects-skills-title::after {
   content: "";
   display: block;
   width: 3em;
