@@ -68,7 +68,7 @@ Set custom properties with root
   }
 }
 
-@media (min-width: 250px) and (max-width: 365px) {
+@media (min-width: 250px) and (max-width: 425px) {
   :root {
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
