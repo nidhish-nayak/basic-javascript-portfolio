@@ -1247,9 +1247,10 @@ Go to top button
   .section__subtitle--about {
     margin-left: -1em;
     font-size: 16px;
+    font-weight: bold;
   }
   .about-me__body {
-    font-size: 14px;
+    font-size: 16px;
   }  
 }
 
