@@ -32,6 +32,7 @@ navLinks.forEach(link => {
 /*===========================
 ANIME JS ANIMATIONS 
 ============================*/
+
   anime({
     targets: '#svg-anime .path-one',
     strokeDashoffset: [anime.setDashoffset, 0],

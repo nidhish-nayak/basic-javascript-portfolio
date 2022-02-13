@@ -8,7 +8,7 @@
 Set custom properties with root
 =====================================================*/
 
-:root {
+:root { 
   --ff-primary: "Source Sans Pro", sans-serif;
   --ff-secondary: "Source Code Pro", monospace;
   --ff-third: "Raleway", sans-serif;

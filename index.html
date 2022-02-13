@@ -33,6 +33,19 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Manifest JSON -->
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Service Worker for Manifest JSON -->
+    <!-- Block used from "https://developers.google.com/web/fundamentals/primers/service-workers/registration" -->
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+
     <!-- ANIME JS FILE!-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
@@ -128,20 +141,20 @@
     <div class="hero-wrapper">
         <ul class="hero-list">
             <li class="hero-item">
-                <a name="link-linkedin-1" target="_blank" href="https://www.linkedin.com/in/nidhishdnayak" alt="www.google.com"
-                    class="hero-link"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
+                <a name="link-linkedin-1" target="_blank" href="https://www.linkedin.com/in/nidhishdnayak"
+                    alt="www.google.com" class="hero-link"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
             </li>
             <li class="hero-item">
-                <a name="link-github-1" target="_blank" href="https://github.com/Nidhish-D-Nayak" alt="www.google.com" class="hero-link"><i
-                        class="fab fa-github" title="Github"></i></a>
+                <a name="link-github-1" target="_blank" href="https://github.com/Nidhish-D-Nayak" alt="www.google.com"
+                    class="hero-link"><i class="fab fa-github" title="Github"></i></a>
             </li>
             <li class="hero-item">
-                <a name="link-hacker-rank-1" target="_blank" href="https://www.hackerrank.com/nidhibelthangady" alt="www.google.com"
-                    class="hero-link"><i class="fab fa-hackerrank" title="Hacker Rank"></i></a>
+                <a name="link-hacker-rank-1" target="_blank" href="https://www.hackerrank.com/nidhibelthangady"
+                    alt="www.google.com" class="hero-link"><i class="fab fa-hackerrank" title="Hacker Rank"></i></a>
             </li>
             <li class="hero-item">
-                <a name="link-code-pen-1" target="_blank" href="https://codepen.io/nidhish-d-nayak" alt="www.google.com" class="hero-link"><i
-                        class="fab fa-codepen" title="Code Pen"></i></a>
+                <a name="link-code-pen-1" target="_blank" href="https://codepen.io/nidhish-d-nayak" alt="www.google.com"
+                    class="hero-link"><i class="fab fa-codepen" title="Code Pen"></i></a>
             </li>
         </ul>
     </div>
