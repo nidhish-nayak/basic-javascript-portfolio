@@ -7,7 +7,7 @@ Hi there 👋.
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://nidhish-d-nayak.github.io/">
-    <img src="/main_logo.webp" alt="Logo" width="240" height="80">
+    <img src="/main_logo.webp" alt="Logo" width="260" height="80">
   </a>
   
 <br>
