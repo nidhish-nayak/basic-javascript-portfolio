@@ -12,6 +12,7 @@ Hi there 👋.
 <br>
   <br>
 <div align="center">  ⭐⭐⭐ </div>
+<br>
 <div align="center">
 I am Nidhish and this is my portfolio. I am very excited about the project I am doing currently and plan on creating more in the future.
 I'd love to hear any suggestions and thoughts from you about the projects I have created. Thank you for checking out 😳
