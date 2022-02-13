@@ -2,26 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="This is my portfolio using HTML, CSS and Vanilla JavaScript. This is also a responsive portfolio made using media queries and grid css. My name is Nidhish D Nayak and I am a Front-end developer based out of Bangalore.">
+        content="This is my portfolio using HTML, CSS and Vanilla JavaScript. This is also a responsive portfolio made using media queries and grid css. My name is Nidhish D Nayak and I am a Front-end developer based out of Bangalore." />
     <title>Portfolio</title>
-    
+
     <!-- Google Fonts -->
 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
 
     <!-- Title Bar Icon -->
 
-    <link rel="icon" href="https://img.icons8.com/color/96/000000/bot.png" type="image/x-icon">
+    <link rel="icon" href="https://img.icons8.com/color/96/000000/bot.png" type="image/x-icon" />
 
     <!-- Normalize CSS to get better cross browser compatibility -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 
     <!-- Font Awesome 5.0.7 -->
 
@@ -31,13 +31,19 @@
 
     <!-- Main CSS File -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- ANIME JS FILE!-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
         integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CALL ANIMATION FUNCTION -->
+
+    <script type="text/javascript">
+        anime();
+    </script>
 
     <!-- Email JS File used from the documentation -->
 
@@ -51,12 +57,10 @@
     <!-- Sweet Alerts File -->
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <meta name="google-site-verification" content="ny3YVB1aL21xeN8PVB0uZ-t_zuNETWslU51bUAnvKlc" />
 
 </head>
 
 <body>
-
     <!-- Pre-Loader in case we add heavy content in future 🤕 -->
 
     <div class="preload">
@@ -66,16 +70,15 @@
     <!-- Header -->
 
     <header id="top">
-
         <!-- MAIN LOGO -->
 
         <div class="logo" onclick="window.location.reload();">
-            <img src="main_logo.webp" alt="">
+            <img src="main_logo.webp" alt="Logo" />
         </div>
 
         <!-- Navigation Button -->
 
-        <button class="nav-toggle" aria-expanded="toggle navigation">
+        <button class="nav-toggle" aria-label="nav-bar-opens">
             <span class="hamburger"></span>
         </button>
 
@@ -84,10 +87,18 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">My Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#work" class="nav__link">My Work</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -106,7 +117,9 @@
         </div>
 
         <div class="line-container-text">
-            <p id="intro-subtitle" class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <p id="intro-subtitle" class="section__subtitle section__subtitle--intro">
+                front-end dev
+            </p>
         </div>
     </section>
 
@@ -114,14 +127,22 @@
 
     <div class="hero-wrapper">
         <ul class="hero-list">
-            <li class="hero-item"><a target="_blank" href="https://www.linkedin.com/in/nidhishdnayak"
-                    class="hero-link"><i class="fab fa-linkedin"></i></a></li>
-            <li class="hero-item"><a target="_blank" href="https://github.com/Nidhish-D-Nayak" class="hero-link"><i
-                        class="fab fa-github"></i></a></li>
-            <li class="hero-item"><a target="_blank" href="https://www.hackerrank.com/nidhibelthangady"
-                    class="hero-link"><i class="fab fa-hackerrank"></i></a></li>
-            <li class="hero-item"><a target="_blank" href="https://codepen.io/nidhish-d-nayak" class="hero-link"><i
-                        class="fab fa-codepen"></i><a></li>
+            <li class="hero-item">
+                <a name="link-linkedin-1" target="_blank" href="https://www.linkedin.com/in/nidhishdnayak" alt="www.google.com"
+                    class="hero-link"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
+            </li>
+            <li class="hero-item">
+                <a name="link-github-1" target="_blank" href="https://github.com/Nidhish-D-Nayak" alt="www.google.com" class="hero-link"><i
+                        class="fab fa-github" title="Github"></i></a>
+            </li>
+            <li class="hero-item">
+                <a name="link-hacker-rank-1" target="_blank" href="https://www.hackerrank.com/nidhibelthangady" alt="www.google.com"
+                    class="hero-link"><i class="fab fa-hackerrank" title="Hacker Rank"></i></a>
+            </li>
+            <li class="hero-item">
+                <a name="link-code-pen-1" target="_blank" href="https://codepen.io/nidhish-d-nayak" alt="www.google.com" class="hero-link"><i
+                        class="fab fa-codepen" title="Code Pen"></i></a>
+            </li>
         </ul>
     </div>
 
@@ -175,44 +196,50 @@
         <!-- Buttons for resume and project -->
 
         <div class="button-container">
-            <a href="#work" class="btn">My Projects</a>
-            <a href="My Resume.pdf" class="btn"><i class="fas fa-download"></i>Resume</a>
+            <a name="link-project-list-name" href="#work" class="btn">My Projects</a>
+            <a name="link-resume" href="My Resume.pdf" class="btn"><i class="fas fa-download"></i>Resume</a>
         </div>
-
     </section>
 
     <!-- About Me -->
 
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">About Me</h2>
-        <p class="section__subtitle section__subtitle--about">Designer & developer</p>
+        <p class="section__subtitle section__subtitle--about">
+            Designer & developer
+        </p>
 
         <div class="about-me__body">
-            <p>Hello, I'm Nidhish D Nayak. A Front-End Web Developer based in Bangalore. I develop
-                responsive websites built for an optimal user experience that can achieve your
-                business goals. I'm exploring other technologies and frameworks that catch my interest.
+            <p>
+                Hello, I'm Nidhish D Nayak. A Front-End Web Developer based in
+                Bangalore. I develop responsive websites built for an optimal user
+                experience that can achieve your business goals. I'm exploring other
+                technologies and frameworks that catch my interest.
             </p>
-            <p>I like to code things from scratch, and enjoy bringing interesting ideas to life.
-                More simplicity has more impact. This is the central approach for my designs.
+            <p>
+                I like to code things from scratch, and enjoy bringing interesting
+                ideas to life. More simplicity has more impact. This is the central
+                approach for my designs.
             </p>
         </div>
-        <img src="about_me.webp" alt="" class="about-me__img">
+        <img src="about_me.webp" alt="" class="about-me__img" />
     </section>
-
 
     <!-- My Work -->
 
     <section class="my-work" id="work">
         <h2 class="section__title section__title--work">My work</h2>
-        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+        <p class="section__subtitle section__subtitle--work">
+            A selection of my range of work
+        </p>
 
         <div class="portfolio">
             <a href="project-one.html" class="portfolio__item">
-                <img src="grid_portfolio_screenshot.webp" alt="" class="portfolio__img">
+                <img src="grid_portfolio_screenshot.webp" alt="" class="portfolio__img" />
                 <div class="portfolio__text">My Portfolio</div>
             </a>
             <a href="project-two.html" class="portfolio__item">
-                <img src="Rectangle 3-8@2x.webp" alt="" class="portfolio__img">
+                <img src="Rectangle 3-8@2x.webp" alt="" class="portfolio__img" />
                 <div class="portfolio__text">Bug Tracker</div>
             </a>
 
@@ -249,9 +276,7 @@
                 <div class="portfolio__text">Bug Tracker</div>
             </a> -->
         </div>
-
     </section>
-
 
     <!-- FOOTER -->
 
@@ -262,36 +287,44 @@
 
         <div class="form-wrapper">
             <form id="contact-form" class="form-wrapper wrap" method="POST">
-                <input id="name" class="wrap-items" type="text" placeholder="Your Name" required>
-                <input id="email" class="wrap-items" type="email" placeholder="Your Email Address" required>
+                <input id="name" class="wrap-items" type="text" placeholder="Your Name" required />
+                <input id="email" class="wrap-items" type="email" placeholder="Your Email Address" required />
                 <textarea id="message" class="wrap-items" placeholder="Write your message here" required></textarea>
-                <button id="submit" class="btn" type="submit" name="submit">Send</button>
+                <button id="submit" class="btn" type="submit" name="submit" aria-label="submit-form">
+                    Send
+                </button>
             </form>
         </div>
 
         <!-- Social Address -->
 
         <ul class="social-list">
-            <li class="social-list__item"><a target="_blank" href="https://www.linkedin.com/in/nidhishdnayak"
-                    class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
-            <li class="social-list__item"><a target="_blank" href="https://github.com/Nidhish-D-Nayak"
-                    class="social-list__link"><i class="fab fa-github"></i></a></li>
-            <li class="social-list__item"><a target="_blank" href="https://www.hackerrank.com/nidhibelthangady"
-                    class="social-list__link"><i class="fab fa-hackerrank"></i></a></li>
-            <li class="social-list__item"><a target="_blank" href="https://codepen.io/nidhish-d-nayak"
-                    class="social-list__link"><i class="fab fa-codepen"></i><a></li>
+            <li class="social-list__item">
+                <a name="link-linkedin-2" target="_blank" href="https://www.linkedin.com/in/nidhishdnayak"
+                    class="social-list__link"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a name="link-github-2" target="_blank" href="https://github.com/Nidhish-D-Nayak"
+                    class="social-list__link"><i class="fab fa-github" title="Github"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a name="link-hacker-rank-2" target="_blank" href="https://www.hackerrank.com/nidhibelthangady"
+                    class="social-list__link"><i class="fab fa-hackerrank" title="Hacker Rank"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a name="link-code-pen-2" target="_blank" href="https://codepen.io/nidhish-d-nayak"
+                    class="social-list__link"><i class="fab fa-codepen" title="Code Pen"></i></a>
+            </li>
         </ul>
-
     </footer>
 
     <!-- GO TO TOP ARROW -->
 
-    <a href="#top"><i id="up-arrow" class="fas fa-arrow-up"></i></a>
+    <a href="#top" alt="Top" aria-label="Top"><i id="up-arrow" class="fas fa-arrow-up"></i></a>
 
     <!-- Main Javascript File -->
 
     <script src="script.js"></script>
-
 </body>
 
 </html>

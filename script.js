@@ -32,25 +32,23 @@ navLinks.forEach(link => {
 /*===========================
 ANIME JS ANIMATIONS 
 ============================*/
+  anime({
+    targets: '#svg-anime .path-one',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutQuad',
+    duration: 10000,
+    direction: 'alternate',
+    loop: true
+  });
 
-anime({
-  targets: '#svg-anime .path-one',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutQuad',
-  duration: 10000,
-  direction: 'alternate',
-  loop: true
-});
-
-anime({
-  targets: '#svg-anime .path-two',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutQuad',
-  duration: 5000,
-  direction: 'alternate',
-  loop: true
-});
-
+  anime({
+    targets: '#svg-anime .path-two',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutQuad',
+    duration: 5000,
+    direction: 'alternate',
+    loop: true
+  });
 /*===========================================
 Send E-Mail Using EmailJS
 ============================================*/
@@ -63,13 +61,13 @@ function validate() {
   let message = document.querySelector("#message");
   let submit = document.querySelector("#submit");
 
-  submit.addEventListener("click", (e)=>{
+  submit.addEventListener("click", (e) => {
     e.preventDefault()
 
-    if(name.value=="" || email.value=="" ||message.value==""){
+    if (name.value == "" || email.value == "" || message.value == "") {
       inputEmpty();
     }
-    else{
+    else {
       sendMail(name.value, email.value, message.value); //CALLING SEND MAIL FUNCTION
       success();
       console.log("Email Sent!")
@@ -85,12 +83,12 @@ SEND MAIL FUNCTION from the documentation
 (Must use same template for this to work)
 ===============================================*/
 
-function sendMail(name,email,message) {
-  emailjs.send("service_wggyt18","template_3vvqfno",{
+function sendMail(name, email, message) {
+  emailjs.send("service_wggyt18", "template_3vvqfno", {
     from_name: name,
     reply_to: email,
     message: message,
-    });
+  });
 }
 
 // RESET FIELDS AFTER SUBMITTED

@@ -72,8 +72,8 @@ Set custom properties with root
   :root {
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
-    --fs-h3: 1rem;
-    --fs-body: 0.75rem;
+    --fs-h3: 0.85rem;
+    --fs-body: 0.8rem;
   }
 }
 

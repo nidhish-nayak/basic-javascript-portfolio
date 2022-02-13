@@ -63,11 +63,12 @@
         <!-- MAIN LOGO -->
 
         <div class="logo">
-            <a href="index.html"><img src="main_logo.webp" alt=""> </a>
+            <a href="index.html"><img src="main_logo.webp" alt="Logo"> </a>
         </div>
+
         <!-- Navigation Button -->
 
-        <button class="nav-toggle" aria-expanded="toggle navigation">
+        <button class="nav-toggle" aria-label="nav-bar-opens" aria-label="nav-bar-opens">
             <span class="hamburger"></span>
         </button>
 
@@ -146,13 +147,13 @@
 
             <div class="my-projects-img">
                 <a href="https://nidhish-d-nayak.github.io/">
-                    <img src="project-one_screenshot.PNG" alt="">
+                    <img class="my-projects-img-item" src="Perfect Score.webp" alt="Website">
                 </a>
             </div>
             <div class="button-container">
-                <a href="https://github.com/Nidhish-D-Nayak/Nidhish-D-Nayak.github.io" class="btn"><i
-                        class="fab fa-github"></i>Code</a>
-                <a href="https://nidhish-d-nayak.github.io/" class="btn"><i
+                <a name="link-github-acc" href="https://github.com/Nidhish-D-Nayak/Nidhish-D-Nayak.github.io"
+                    class="btn"><i class="fab fa-github"></i>Code</a>
+                <a name="link-github-website" href="https://nidhish-d-nayak.github.io" class="btn"><i
                         class="fas fa-chalkboard-teacher"></i></i>Website</a>
             </div>
         </div>
@@ -170,21 +171,29 @@
                 <input id="name" class="wrap-items" type="text" placeholder="Your Name" required>
                 <input id="email" class="wrap-items" type="email" placeholder="Your Email Address" required>
                 <textarea id="message" class="wrap-items" placeholder="Write your message here" required></textarea>
-                <button id="submit" class="btn" type="submit" name="submit">Send</button>
+                <button id="submit" class="btn" type="submit" name="submit" aria-label="submit-form">Send</button>
             </form>
         </div>
 
         <!-- Social Address -->
 
         <ul class="social-list">
-            <li class="social-list__item"><a target="_blank" href="https://www.linkedin.com/in/nidhishdnayak"
-                    class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
-            <li class="social-list__item"><a target="_blank" href="https://github.com/Nidhish-D-Nayak"
-                    class="social-list__link"><i class="fab fa-github"></i></a></li>
-            <li class="social-list__item"><a target="_blank" href="https://www.hackerrank.com/nidhibelthangady"
-                    class="social-list__link"><i class="fab fa-hackerrank"></i></a></li>
-            <li class="social-list__item"><a target="_blank" href="https://codepen.io/nidhish-d-nayak"
-                    class="social-list__link"><i class="fab fa-codepen"></i><a></li>
+            <li class="social-list__item">
+                <a name="link-linkedin-2" target="_blank" href="https://www.linkedin.com/in/nidhishdnayak"
+                    class="social-list__link"><i class="fab fa-linkedin" title="Linkedin Title"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a name="link-github-2" target="_blank" href="https://github.com/Nidhish-D-Nayak"
+                    class="social-list__link"><i class="fab fa-github" title="Github Title"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a name="link-hacker-rank-2" target="_blank" href="https://www.hackerrank.com/nidhibelthangady"
+                    class="social-list__link"><i class="fab fa-hackerrank" title="Hacker-rank Title"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a name="link-code-pen-2" target="_blank" href="https://codepen.io/nidhish-d-nayak"
+                    class="social-list__link"><i class="fab fa-codepen" title="Code-pen Title"></i></a>
+            </li>
         </ul>
 
     </footer>
