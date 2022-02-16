@@ -33,23 +33,23 @@ navLinks.forEach(link => {
 ANIME JS ANIMATIONS 
 ============================*/
 
-  anime({
-    targets: '#svg-anime .path-one',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutQuad',
-    duration: 10000,
-    direction: 'alternate',
-    loop: true
-  });
+anime({
+  targets: '#svg-anime .path-one',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutQuad',
+  duration: 10000,
+  direction: 'alternate',
+  loop: true
+});
 
-  anime({
-    targets: '#svg-anime .path-two',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutQuad',
-    duration: 5000,
-    direction: 'alternate',
-    loop: true
-  });
+anime({
+  targets: '#svg-anime .path-two',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutQuad',
+  duration: 5000,
+  direction: 'alternate',
+  loop: true
+});
 /*===========================================
 Send E-Mail Using EmailJS
 ============================================*/
@@ -145,63 +145,3 @@ function scrollFunctionOne() {
     toTop.style.display = "none";
   }
 }
-
-
-// /*==================================================
-//   Media Queries for the animated circle for ANIME JS
-// ==================================================*/
-
-// function myFunction(x) {
-//   if (x.matches) { // If media query matches
-//     anime({
-//       targets: '.box',
-//       keyframes: [{
-//           translateY: -40
-//         },
-//         {
-//           translateX: 200
-//         },
-//         {
-//           translateX: 0
-//         },
-//         {
-//           translateY: 80
-//         },
-//         {
-//           translateY: 0
-//         }
-//       ],
-//       duration: 10000,
-//       easing: 'easeOutElastic(1, 0.8)',
-//       loop: true
-//     });
-//   } else {
-//     anime({
-//       targets: '.box',
-//       keyframes: [{
-//           translateY: -40
-//         },
-//         {
-//           translateX: 350
-//         },
-//         {
-//           translateX: 0
-//         },
-//         {
-//           translateY: 180
-//         },
-//         {
-//           translateY: 0
-//         }
-//       ],
-//       duration: 10000,
-//       easing: 'easeOutElastic(1, 0.8)',
-//       loop: true
-//     });
-
-//   }
-// }
-
-// var x = window.matchMedia("(max-width: 560px)")
-// myFunction(x) // Call listener function at run time
-// x.addListener(myFunction) // Attach listener function on state changes this will be executed
