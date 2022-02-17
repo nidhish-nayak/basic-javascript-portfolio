@@ -3,7 +3,7 @@
 [![My GitHub Banner](images/project-one_screenshot.webp)](https://nidhish-d-nayak.github.io)
 <br>
 <br>
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Nidhish-D-Nayak&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Nidhish-D-Nayak&theme=dark&show_icons=true)
 <br>
 <br>
 [![My github stats](https://github-readme-stats.vercel.app/api?username=Nidhish-D-Nayak)](https://github.com/Nidhish-D-Nayak/github-readme-stats)
