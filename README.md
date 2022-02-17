@@ -5,7 +5,7 @@
 <h3>Tools & Languages Used</h3>
 
 <br>
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Nidhish-D-Nayak&theme=tokyonight)
+[!My stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Nidhish-D-Nayak&theme=tokyonight)
 
 <!-- PROJECT LOGO -->
 <br />
