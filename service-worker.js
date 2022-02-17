@@ -6,7 +6,7 @@ workbox.routing.registerRoute(
     // Routing module to register a route that matches all images
 
     // This will store only images in cache since they don't change often
-    ({request}) => request.destination === 'image',
+    ({ request }) => request.destination === 'image',
 
     // Caching strategy -> Will check for network. If not found goes to cache
     new workbox.strategies.NetworkFirst()

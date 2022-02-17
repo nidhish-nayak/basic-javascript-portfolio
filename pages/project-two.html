@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is my portfolio using HTML, CSS and Vanilla JavaScript. This is also a responsive portfolio made using media queries and grid css. My name is Nidhish D Nayak and I am a Front-end developer based out of Bangalore.">
+    <title>Portfolio</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- Title Bar Icon -->
+
+    <link rel="icon" href="https://img.icons8.com/color/96/000000/bot.png" type="image/x-icon">
+
+    <!-- Normalize CSS to get better cross browser compatibility -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Font Awesome 5.0.7 -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main CSS File -->
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Email JS File used from the documentation -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_72V5ZrKiDqB9prAC597MF");
+        })();
+    </script>
+
+    <!-- Sweet Alerts File -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Pre-Loader in case we add heavy content in future 🤕 -->
+
+    <div class="preload">
+        <h3 class="preload-text">Loading ...</h3>
+    </div>
+
+    <!-- Header -->
+
+    <header id="top">
+
+        <!-- MAIN LOGO -->
+
+        <div class="logo">
+            <a href="../index.html"><img src="../images/main_logo.webp" alt="Logo"> </a>
+        </div>
+
+        <!-- Navigation Button -->
+
+        <button class="nav-toggle" aria-label="nav-bar-opens" aria-label="nav-bar-opens">
+            <span class="hamburger"></span>
+        </button>
+
+        <!-- Navigation Bar Items -->
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="../index.html#skills" class="nav__link">My Skills</a></li>
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="../index.html#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main TITLE -->
+
+    <div class="page-title">
+        My Projects
+    </div>
+
+    <div class="button-container">
+        <a href="../index.html#work" class="btn"><i class="fas fa-arrow-left"></i> Proj. List</a>
+    </div>
+
+    <!-- Project 👨🏼‍💻 -->
+
+    <section class="my-projects" id="project-1">
+
+        <h2 class="my-projects-title">Bug Tracker</h2>
+        <div class="my-projects-wrapper">
+            <p class="my-projects-subtitle">About the project</p>
+
+            <div class="my-projects-body">
+                <p>In progress...</p>
+                <p>In progress...</p>
+            </div>
+            <p class="my-projects-subtitle">Issues faced & fixed</p>
+
+            <div class="my-projects-body">
+                <p>In progress...</p>
+                <p>In progress...</p>
+            </div>
+        </div>
+        <div class="my-projects-skills">
+            <h2 class="my-projects-skills-title">Made With</h2>
+            <div class="wrapper">
+                <ul class="skills-container">
+                    <li class="skills-title">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="fab fa-css3"></i>
+                        <p>CSS</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Responsive Design</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="fab fa-adn"></i>
+                        <p>AnimeJS Lib.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- WEBSITE -->
+
+            <h2 class="my-projects-site-title">Website</h2>
+
+            <div class="my-projects-img">
+                <a href="https://nidhish-d-nayak.github.io/">
+                    <img class="my-projects-img-item" src="../images/Perfect Score.webp" alt="Website">
+                </a>
+            </div>
+            <div class="button-container">
+                <a name="link-github-acc" href="https://github.com/Nidhish-D-Nayak/Nidhish-D-Nayak.github.io"
+                    class="btn"><i class="fab fa-github"></i>Code</a>
+                <a name="link-github-website" href="https://nidhish-d-nayak.github.io" class="btn"><i
+                        class="fas fa-chalkboard-teacher"></i></i>Website</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="contact" class="footer">
+        <h2 class="footer__title footer__title--contact">Socials</h2>
+
+        <!-- Social Address -->
+
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a name="link-linkedin-2" target="_blank" href="https://www.linkedin.com/in/nidhishdnayak"
+                    class="social-list__link"><i class="fab fa-linkedin" title="Linkedin Title"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a name="link-github-2" target="_blank" href="https://github.com/Nidhish-D-Nayak"
+                    class="social-list__link"><i class="fab fa-github" title="Github Title"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a name="link-hacker-rank-2" target="_blank" href="https://www.hackerrank.com/nidhibelthangady"
+                    class="social-list__link"><i class="fab fa-hackerrank" title="Hacker-rank Title"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a name="link-code-pen-2" target="_blank" href="https://codepen.io/nidhish-d-nayak"
+                    class="social-list__link"><i class="fab fa-codepen" title="Code-pen Title"></i></a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <!-- Main Javascript File -->
+
+    <script src="../scripts/script.js"></script>
+
+</body>
+
+</html>
