@@ -106,14 +106,14 @@ textarea {
 @media (min-width: 1920px) and (max-width: 2049px) {
   textarea {
     resize: none;
-    height: 250px;
+    height: 150px;
   }
 }
 
 @media (min-width: 2049px) {
   textarea {
     resize: none;
-    height: 350px;
+    height: 250px;
   }
 }
 
@@ -1279,5 +1279,18 @@ Go to top button
   .g-recaptcha {
     margin-bottom: 1em;
     transform: scale(0.77);
+  }
+}
+@media (min-width: 1920px) and (max-width: 2049px) {
+  .g-recaptcha {
+    margin-bottom: 1.25em;
+    transform: scale(1.5);
+  }
+}
+
+@media (min-width: 2049px) {
+  .g-recaptcha {
+    margin-bottom: 1.5em;
+    transform: scale(2);
   }
 }
