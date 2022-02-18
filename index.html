@@ -38,9 +38,6 @@
 
     <link rel="manifest" href="manifest.json">
 
-    <!-- Captcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
     <!-- Service Worker for Manifest JSON -->
     <!-- Block used from "https://developers.google.com/web/fundamentals/primers/service-workers/registration" -->
 
@@ -307,9 +304,6 @@
                 <input id="name" class="wrap-items" type="text" placeholder="Your Name" required />
                 <input id="email" class="wrap-items" type="email" placeholder="Your Email Address" required />
                 <textarea id="message" class="wrap-items" placeholder="Write your message here" required></textarea>
-                <div class="captcha-wrapper">
-                    <div class="g-recaptcha" data-sitekey="6Lcg9YUeAAAAAGim-Z077-DJBKtYKebKNhWz9ryQ"></div>
-                </div>
                 <button id="submit" class="btn" type="submit" name="submit" aria-label="submit-form">
                     Send
                 </button>

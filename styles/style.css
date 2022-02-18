@@ -100,20 +100,20 @@ body {
 
 textarea {
   resize: none;
-  height: 90px;
+  height: 150px;
 }
 
 @media (min-width: 1920px) and (max-width: 2049px) {
   textarea {
     resize: none;
-    height: 150px;
+    height: 250px;
   }
 }
 
 @media (min-width: 2049px) {
   textarea {
     resize: none;
-    height: 250px;
+    height: 350px;
   }
 }
 
@@ -284,7 +284,7 @@ Intro section with ANIME JS
   }
 }
 
-/*===============END INTRO============*/
+/*=============END INTRO============*/
 
 section {
   padding: 5em 2em;
@@ -353,31 +353,6 @@ button {
   border: 0;
 }
 
-/*==============================
-Button Font Media Query for small screen
-===============================*/
-/* @media (min-width: 390px) and (max-width: 615px) {
-  .btn {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-size: 0.7rem;
-  }
-}
-
-@media (min-width: 1366px) {
-  .btn {
-    font-size: calc(var(--fs-body) - 3.5px);
-  }
-}
-
-@media (min-width: 280px) and (max-width: 390px) {
-  .btn {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-size: 0.5rem;
-  }
-} */
-
 .btn:hover {
   transform: scale(1.1);
 }
@@ -385,6 +360,7 @@ Button Font Media Query for small screen
 /* ==============================================
 Just padding the download button
 ==============================================*/
+
 .fa-download {
   margin-right: 1.25em;
 }
@@ -445,7 +421,7 @@ Special style to only intro subtitle on hero page
     font-size: 0.5rem;
   }
 }
-/*===============================================*/
+
 .section__subtitle--about {
   background: var(--clr-accent);
   font-family: var(--ff-secondary);
@@ -464,9 +440,11 @@ Special style to only intro subtitle on hero page
   font-family: var(--ff-secondary);
   padding: 0.25em 1em;
 }
+
 /*=====================================================
 Header
 =====================================================*/
+
 header {
   display: flex;
   justify-content: space-between;
@@ -554,9 +532,9 @@ header {
   transform: rotate(90deg) translateX(-6px);
 }
 
-/********************************
+/*==================================
 HAMBURGER NAVBAR
-********************************/
+==================================*/
 
 .hamburger {
   display: block;
@@ -623,9 +601,9 @@ HAMBURGER NAVBAR
   } /* Same vice versa */
 }
 
-/* ==============================================================
+/* ==============================================
 My Skills Section
-===============================================================*/
+===============================================*/
 
 .my-skills {
   background-color: var(--clr-dark-very);
@@ -704,9 +682,9 @@ My Skills Section
   }
 }
 
-/*----------------------------------------------------------------
+/*============================
 ABOUT ME SECTION
-----------------------------------------------------------------*/
+=============================*/
 
 .about-me {
   max-width: 1000px;
@@ -920,8 +898,9 @@ FOOTER
   color: var(--clr-light);
 }
 
-/* =================================================================
-Line after underline in contact form */
+/* ===========================================
+Line after underline in contact form
+=============================================*/
 
 .footer__title--contact::after {
   content: "";
@@ -1258,39 +1237,5 @@ Go to top button
   .button-container .fa-chalkboard-teacher,
   .button-container .fa-github {
     display: none;
-  }
-}
-
-/*==============================================
- # CAPTCHA STYLE
-==============================================*/
-
-.captcha-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.g-recaptcha {
-  margin-bottom: 1em;
-}
-
-@media (max-width: 700px) {
-  .g-recaptcha {
-    margin-bottom: 1em;
-    transform: scale(0.77);
-  }
-}
-@media (min-width: 1920px) and (max-width: 2049px) {
-  .g-recaptcha {
-    margin-bottom: 1.25em;
-    transform: scale(1.5);
-  }
-}
-
-@media (min-width: 2049px) {
-  .g-recaptcha {
-    margin-bottom: 1.5em;
-    transform: scale(2);
   }
 }
