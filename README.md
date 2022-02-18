@@ -10,9 +10,8 @@
 <br>
 <br>
 Hey, I am Nidhish and this is my portfolio. I am very excited about the project I am doing currently and plan on creating more in the future.
-I'd love to hear any suggestions and thoughts from you about the projects I have created. Thank you for checking out 😳
+I'd love to hear any suggestions and thoughts from you about the projects I have created. Thank you for checking out 🤩
 
-Here are my social links if you need to contact me 🤩
 </p>
 <br>
   <a href="https://nidhish-d-nayak.github.io/">
