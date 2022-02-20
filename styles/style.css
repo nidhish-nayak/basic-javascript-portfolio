@@ -606,10 +606,10 @@ My Skills Section
 ===============================================*/
 
 .my-skills {
-  background-color: #606060;
+  background-color: var(--clr-dark);
   background-image: url(../images/cover_sheet.webp);
   background-size: cover;
-  background-blend-mode: screen;
+  background-blend-mode: multiply;
   background-position: center;
   color: var(--clr-light);
   text-align: center;
