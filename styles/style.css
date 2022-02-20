@@ -606,7 +606,7 @@ My Skills Section
 ===============================================*/
 
 .my-skills {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-dark-secondary);
   background-image: url(../images/cover_sheet.webp);
   background-size: cover;
   background-blend-mode: multiply;
