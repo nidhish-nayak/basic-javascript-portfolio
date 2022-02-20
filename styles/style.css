@@ -727,6 +727,7 @@ ABOUT ME SECTION
     width: calc(100%+4em);
     padding-left: 2em;
     padding-right: calc(200px + 4em);
+    box-shadow: var(--bs-clean);
   }
 
   .about-me__img {
@@ -760,6 +761,7 @@ ABOUT ME SECTION
     width: calc(100%+4em);
     padding-left: 2em;
     padding-right: calc(200px + 4em);
+    box-shadow: var(--bs-clean);
   }
 
   .about-me__img {
@@ -792,6 +794,7 @@ ABOUT ME SECTION
     width: calc(100%+4em);
     padding-left: 2em;
     padding-right: calc(200px + 4em);
+    box-shadow: var(--bs-clean);
   }
 
   .about-me__img {
