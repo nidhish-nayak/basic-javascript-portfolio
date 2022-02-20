@@ -1193,7 +1193,7 @@ Go to top button
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
-    box-shadow: var(--bs);
+    box-shadow: var(--bs-clean);
     background-color: var(--clr-accent);
   }
 
@@ -1213,7 +1213,7 @@ Go to top button
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
-    box-shadow: var(--bs);
+    box-shadow: var(--bs-clean);
     background-color: var(--clr-accent);
     letter-spacing: 0.1rem;
     word-spacing: 0.1rem;
