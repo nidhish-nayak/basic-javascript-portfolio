@@ -30,6 +30,7 @@ Set custom properties with root
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  --bs-clean: 12px 8px 1px 1px rgb(225, 225, 225);
 }
 
 @media (min-width: 800px) and (max-width: 1601px) {
@@ -427,6 +428,7 @@ Special style to only intro subtitle on hero page
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   padding: 0.25em 1em;
+  box-shadow: var(--bs-clean);
 }
 
 .section__subtitle--work {
@@ -1110,7 +1112,7 @@ Go to top button
   font-family: var(--ff-secondary);
   font-size: var(--fs-h3);
   font-weight: var(--fw-bold);
-  box-shadow: var(--bs);
+  box-shadow: var(--bs-clean);
   background-color: var(--clr-accent);
   letter-spacing: 0.1rem;
   word-spacing: 0.1rem;
