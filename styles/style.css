@@ -176,7 +176,7 @@ Intro section with ANIME JS
   .line-container {
     margin: 0 auto;
     height: 100%;
-    width: 400px;
+    max-width: 400px;
     padding: 2em 0 2em 0;
   }
 
@@ -194,7 +194,7 @@ Intro section with ANIME JS
   .line-container {
     margin: 0 auto;
     height: 100%;
-    width: 200px;
+    max-width: 300px;
     padding: 2em 0 2em 0;
   }
   .line-container-text {
@@ -211,7 +211,7 @@ Intro section with ANIME JS
   .line-container {
     margin: 0 auto;
     height: 100%;
-    width: 100px;
+    max-width: 200px;
     padding: 2em 0 2em 0;
   }
 
@@ -225,6 +225,17 @@ Intro section with ANIME JS
   }
 }
 
+@media (min-width: 715px) and (max-width: 1279px) {
+  .line-container {
+    display: flex;
+    max-width: 70%;
+    padding: 1.75em 0 1.75em 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 1600px) and (max-width: 1920px) {
   .intro {
     padding-bottom: 70px;
@@ -232,7 +243,7 @@ Intro section with ANIME JS
   }
   .line-container-text {
     display: flex;
-    width: 50%;
+    max-width: 50%;
     height: min-content;
     justify-content: flex-end;
     text-transform: uppercase;
@@ -463,6 +474,13 @@ header {
 .logo {
   width: 10%;
   height: 2%;
+}
+
+@media (min-width: 700px) and (max-width: 1600px) {
+  .logo {
+    width: 138px;
+    height: 28px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 700px) {
@@ -714,6 +732,16 @@ ABOUT ME SECTION
 
 .about-me__body {
   font-size: calc(var(--fs-h3) - 4px);
+}
+
+@media (max-width: 599px) {
+  .about-me__img {
+    box-shadow: var(--bs);
+    border-radius: 0.2em;
+    width: 50%;
+    margin: 2em auto 0;
+    transition: transform 250ms ease-in-out;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1367px) {
