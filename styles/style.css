@@ -454,9 +454,16 @@ header {
   position: relative;
 }
 
-.logo {
+.logo-item {
   width: 138.54px;
   height: 25.05px;
+}
+
+@media (min-width: 1919px) {
+  .logo-item {
+    width: 158.54px;
+    height: 45.05px;
+  }
 }
 
 .nav {
