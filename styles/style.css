@@ -455,15 +455,8 @@ header {
 }
 
 .logo {
-  width: 138.54px;
-  height: 25.05px;
-}
-
-@media (min-width: 1920px) {
-  .logo {
-    width: 10%;
-    height: 2%;
-  }
+  width: 10%;
+  height: 2%;
 }
 
 .nav {
