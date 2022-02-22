@@ -853,6 +853,7 @@ My Work
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+  position: relative;
 }
 
 .portfolio {
@@ -1283,5 +1284,33 @@ Go to top button
   .button-container .fa-chalkboard-teacher,
   .button-container .fa-github {
     display: none;
+  }
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.wave .shape-fill {
+  fill: var(--clr-light);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .wave svg {
+    width: calc(100% + 1.3px);
+    height: 27px;
   }
 }
