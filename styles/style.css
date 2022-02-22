@@ -46,7 +46,7 @@ Set custom properties with root
   :root {
     --fs-h1: 5.25rem;
     --fs-h2: 4.5rem;
-    --fs-h3: 2.25rem;
+    --fs-h3: 2.2rem;
     --fs-body: 1.9rem;
   }
 }
@@ -55,7 +55,7 @@ Set custom properties with root
   :root {
     --fs-h1: 5.75rem;
     --fs-h2: 5rem;
-    --fs-h3: 2.75rem;
+    --fs-h3: 2.5rem;
     --fs-body: 2rem;
   }
 }
@@ -156,7 +156,7 @@ Intro section with ANIME JS
 .line-container {
   display: flex;
   max-width: 50%;
-  padding: 2em 0 2em 0;
+  padding: 1.75em 0 1.75em 0;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -164,7 +164,7 @@ Intro section with ANIME JS
 
 .line-container-text {
   display: flex;
-  width: 600px;
+  width: 50%;
   height: 100%;
   justify-content: flex-end;
   text-transform: uppercase;
@@ -225,15 +225,15 @@ Intro section with ANIME JS
   }
 }
 
-@media (min-width: 1600px) and (max-width: 1921px) {
+@media (min-width: 1600px) and (max-width: 1920px) {
   .intro {
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-top: 70px;
   }
   .line-container-text {
     display: flex;
-    width: 830px;
-    height: 100%;
+    width: 50%;
+    height: min-content;
     justify-content: flex-end;
     text-transform: uppercase;
     margin: 0 auto;
@@ -241,11 +241,15 @@ Intro section with ANIME JS
   }
 }
 
-@media (min-width: 1921px) and (max-width: 2048px) {
+@media (min-width: 1920px) and (max-width: 2048px) {
+  .intro {
+    padding-bottom: 65px;
+    padding-top: 65px;
+  }
   .line-container-text {
     display: flex;
     width: 1000px;
-    height: 100%;
+    height: min-content;
     justify-content: flex-end;
     text-transform: uppercase;
     margin: 0 auto;
@@ -255,13 +259,13 @@ Intro section with ANIME JS
 
 @media (min-width: 2048px) and (max-width: 3839px) {
   .intro {
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-bottom: 32px;
+    padding-top: 32px;
   }
   .line-container-text {
     display: flex;
     width: 50%;
-    height: 100%;
+    height: min-content;
     justify-content: flex-end;
     text-transform: uppercase;
     margin: 0 auto;
@@ -271,8 +275,8 @@ Intro section with ANIME JS
 
 @media (min-width: 3839px) {
   .intro {
-    padding-bottom: 160px;
-    padding-top: 160px;
+    padding-bottom: 95px;
+    padding-top: 95px;
   }
   .line-container-text {
     display: flex;
@@ -410,6 +414,7 @@ Special style to only intro subtitle on hero page
   font-weight: var(--fw-reg);
   border-radius: 5px 20px 5px;
   font-family: var(--ff-third);
+  font-size: calc(var(--fs-h3) - 5px);
 }
 
 @media (min-width: 345px) and (max-width: 768px) {
@@ -428,6 +433,7 @@ Special style to only intro subtitle on hero page
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   padding: 0.25em 1em;
+  height: min-content;
   box-shadow: var(--bs-clean);
 }
 
@@ -457,6 +463,20 @@ header {
 .logo {
   width: 10%;
   height: 2%;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .logo {
+    width: 138px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 118px;
+    height: 8px;
+  }
 }
 
 .nav {
