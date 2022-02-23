@@ -18,10 +18,10 @@ Set custom properties with root
 
   --clr-light: #f8f8f8;
   --clr-dark: #303030;
-  --clr-dark-secondary: rgb(25, 25, 25);
-  --clr-dark-very: rgb(15, 15, 15);
+  --clr-dark-secondary: #191919;
+  --clr-dark-very: #0f0f0f;
   --clr-accent: #16e0bd;
-  --clr-purple: rgb(132, 83, 227);
+  --clr-purple: #8453e3;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -722,6 +722,7 @@ ABOUT ME SECTION
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
+  padding-bottom: 1em;
 }
 
 .about-me__img {
@@ -846,8 +847,100 @@ ABOUT ME SECTION
 }
 
 /* ==============================
+Boat animations
+===============================*/
+
+.boat-wrapper {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+
+.boat-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+.boat-wrapper #flag {
+  animation: flagmove 250ms ease-in-out infinite;
+  transform-origin: center;
+}
+
+.boat-wrapper #Frame_1 {
+  animation: boatmove 15s ease-in-out infinite;
+}
+
+@keyframes flagmove {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(3deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-3deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes boatmove {
+  0% {
+    transform: translateX(-6000px);
+  }
+
+  100% {
+    transform: translateX(6000px);
+  }
+}
+
+/* ==============================
 My Work
 ================================*/
+
+/*==============================
+WAVE TOP BAR
+==============================*/
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  box-shadow: 0px -1px 3px rgba(50, 50, 50, 0.75);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 55px;
+}
+
+.wave .shape-fill {
+  fill: var(--clr-accent);
+}
+
+.wave .one {
+  fill: var(--clr-accent);
+  opacity: 0.75;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .wave svg {
+    width: calc(100% + 1.3px);
+    height: 27px;
+  }
+}
+
+/** My Work Content **/
 
 .my-work {
   background-color: var(--clr-dark);
@@ -1081,7 +1174,9 @@ Go to top button
     justify-content: center;
     width: max-content;
     padding: 0;
-    border: 1px solid black;
+    grid-area: side;
+    background-color: white;
+    background: url(../images/image.webp) repeat;
   }
   .hero-item {
     margin: 0;
@@ -1096,8 +1191,8 @@ Go to top button
   }
 
   .hero-link .fab:hover {
-    background-color: var(--clr-dark-secondary);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: black;
     box-shadow: var(--bs);
   }
 }
@@ -1284,33 +1379,5 @@ Go to top button
   .button-container .fa-chalkboard-teacher,
   .button-container .fa-github {
     display: none;
-  }
-}
-
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 75px;
-}
-
-.wave .shape-fill {
-  fill: var(--clr-light);
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .wave svg {
-    width: calc(100% + 1.3px);
-    height: 27px;
   }
 }
