@@ -151,6 +151,8 @@ Intro section with ANIME JS
 
 .intro {
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .line-container {
@@ -298,6 +300,33 @@ Intro section with ANIME JS
     margin: 0 auto;
     align-items: center;
   }
+}
+
+/* ==================================
+BLOB MOTION
+===================================*/
+.blob1 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 75%;
+  top: -10%;
+  right: -50%;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+.blob2 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 15%;
+  top: 5%;
+  right: 5%;
+  z-index: -1;
+  opacity: 0.85;
 }
 
 /*=============END INTRO============*/
