@@ -160,7 +160,3 @@ function scrollFunctionOne() {
     toTop.style.display = "none";
   }
 }
-
-/*==============================
-BLOB ANIMATION
-==============================*/
