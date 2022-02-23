@@ -256,8 +256,8 @@ Intro section with ANIME JS
 
 @media (min-width: 1920px) and (max-width: 2048px) {
   .intro {
-    padding-bottom: 65px;
-    padding-top: 65px;
+    padding-bottom: 75px;
+    padding-top: 75px;
   }
   .line-container-text {
     display: flex;
@@ -272,8 +272,8 @@ Intro section with ANIME JS
 
 @media (min-width: 2048px) and (max-width: 3839px) {
   .intro {
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding-bottom: 35px;
+    padding-top: 35px;
   }
   .line-container-text {
     display: flex;
@@ -288,8 +288,8 @@ Intro section with ANIME JS
 
 @media (min-width: 3839px) {
   .intro {
-    padding-bottom: 95px;
-    padding-top: 95px;
+    padding-bottom: 100px;
+    padding-top: 100px;
   }
   .line-container-text {
     display: flex;
