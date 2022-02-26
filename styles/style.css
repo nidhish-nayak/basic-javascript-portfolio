@@ -499,6 +499,7 @@ Animation text for intro subtitle
     font-family: var(--ff-secondary);
     padding: 0.25em 1em;
     position: relative;
+    transform: translateY(3rem);
     animation: fadeInUp 1s ease forwards;
   }
   .section__subtitle--intro::after,
