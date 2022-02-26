@@ -489,6 +489,61 @@ Special style to only intro subtitle on hero page
   padding: 0.25em 1em;
 }
 
+/*====================================
+Animation text for intro subtitle
+====================================*/
+
+@media (min-width: 1000px) {
+  .section__subtitle--intro {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    padding: 0.25em 1em;
+    position: relative;
+    animation: fadeInUp 1s ease forwards;
+  }
+  .section__subtitle--intro::after,
+  .section__subtitle--intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .section__subtitle--intro::before {
+    border-radius: 5px 20px 5px;
+    background: var(--clr-purple);
+    animation: typewriter 2s steps(13) forwards;
+  }
+
+  .section__subtitle--intro::after {
+    background: white;
+    width: 0.05em;
+    height: 60%;
+    margin: auto 0;
+    animation: typewriter 2s steps(13) forwards, blink 1s steps(13) infinite;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 91%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
 /*=====================================================
 Header
 =====================================================*/
@@ -1395,8 +1450,8 @@ Go to top button
 }
 
 .my-projects-skills .button-container .btn {
-  background-color: var(--clr-dark-secondary);
-  color: var(--clr-light);
+  background: var(--clr-accent);
+  color: black;
 }
 
 .my-projects-site-title::after {
