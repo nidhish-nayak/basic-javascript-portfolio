@@ -14,9 +14,7 @@ I'd love to hear any suggestions and thoughts from you about the projects I have
 
 </p>
 <br>
-  <a href="https://nidhish-d-nayak.github.io/">
     <img src="images/main_logo.webp" alt="Logo" width="260" height="80">
-  </a>
 <br>
 <br>
 Project Link: https://nidhish-d-nayak.github.io
