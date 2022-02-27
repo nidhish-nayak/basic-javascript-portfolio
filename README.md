@@ -14,7 +14,11 @@ I'd love to hear any suggestions and thoughts from you about the projects I have
 
 </p>
 <br>
+<<<<<<< HEAD
     <img src="images/main_logo.webp" alt="Logo" width="260" height="80">
+=======
+    <img src="images/main_logo.png" alt="Logo" width="260" height="80">
+>>>>>>> 664bd3b904e38b33b85bcf7cf41b677114054cac
 <br>
 <br>
 Project Link: https://nidhish-d-nayak.github.io
