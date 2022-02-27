@@ -16,7 +16,7 @@ I'd love to hear any suggestions and thoughts from you about the projects I have
 <br>
     <img src="images/main_logo.png" alt="Logo" width="260" height="80">
 <br>
-<br>
+<br>    
 Project Link: https://nidhish-d-nayak.github.io
 
 <p align="right">(<a href="#top">Back To Top</a>)</p>
