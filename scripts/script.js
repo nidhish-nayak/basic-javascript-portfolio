@@ -76,9 +76,14 @@ function validate() {
         inputEmpty();
       }
       else {
-        sendMail(name.value, email.value, message.value); //CALLING SEND MAIL FUNCTION
-        success();
-        formReset();  //CALLING RESET FORM FUNCTION
+        try {
+          sendMail(name.value, email.value, message.value); //CALLING SEND MAIL FUNCTION
+          success();
+          formReset();  //CALLING RESET FORM FUNCTION
+        }
+        catch (err) {
+          error(); //Error message calling if the mail is not successful
+        }
       }
     })
   }
