@@ -1,5 +1,3 @@
-import TypeIt from "typeit";
-
 const navToggle = document.querySelector(".nav-toggle"); /*Variable for toggling the navigation bar*/
 const navLinks = document.querySelectorAll('.nav__link'); /*Variable for closing the nav when link is clicked*/
 const boxAlert = document.querySelectorAll(".box"); /*Variable for circle animation at intro*/
