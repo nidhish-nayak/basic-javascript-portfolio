@@ -38,7 +38,7 @@ try {
     targets: '#svg-anime .path-one',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutQuad',
-    duration: 10000,
+    duration: 14000,
     direction: 'alternate',
     loop: true
   });
@@ -47,7 +47,7 @@ try {
     targets: '#svg-anime .path-two',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutQuad',
-    duration: 5000,
+    duration: 7000,
     direction: 'alternate',
     loop: true
   });
