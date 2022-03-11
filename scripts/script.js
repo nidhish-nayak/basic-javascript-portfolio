@@ -165,3 +165,19 @@ function scrollFunctionOne() {
     toTop.style.display = "none";
   }
 }
+
+// Typit JS library for type animation
+
+document.addEventListener("DOMContentLoaded", function () {
+  new TypeIt("#intro-subtitle", {
+    strings: ["Front-End Dev"],
+    loop: true,
+    speed: 250
+  })
+    .pause(1500)
+    .delete(null, { delay: 1000, speed: 250 })
+    .type("Software Eng", { delay: 1000, speed: 250 })
+    .pause(1500)
+    .delete(null, { delay: 1000, speed: 250 })
+    .go();
+});
